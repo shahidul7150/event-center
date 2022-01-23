@@ -1,0 +1,37 @@
+
+
+
+
+
+/* button  */
+.button-org{
+    background-image: linear-gradient(#FF7900,#f3960a);
+    transition: 0.3s ease-in-out;
+}
+  
+.button-org:hover {
+    transition: 0.3s ease-in-in;
+    transform: scale(1.03);
+  }
+
+  .button-org a{
+      text-decoration: none;
+      color: #fff;
+  }
+
+  /* price style  */
+  .icon p{
+      font-weight: 500;
+    
+  }
+  .icon .fas{
+      background-color: #e1ccf5;
+      color: blueviolet;
+      border-radius: 25px;
+      font-size: 12px;
+      padding: 4px;
+  }
+  .price-btn{
+      background-color:#FDF4FA ;
+      color: blueviolet;
+  }
