@@ -1,6 +1,9 @@
 
 
-
+/* common  */
+.price-section{
+    position: relative;
+}
 
 
 /* button  */
@@ -34,4 +37,27 @@
   .price-btn{
       background-color:#FDF4FA ;
       color: blueviolet;
+  }
+  .hot-card{
+      position: relative;
+      top: -25px;
+      transform: scaleY(1.09);
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  }
+  badge{
+      position: absolute;
+      bottom: 530px;
+      right: 320px;
+      z-index: 1;
+      background-color: #fa2828;
+  }
+  @media screen and (max-width:768px) {
+    badge{
+        position: absolute;
+        bottom: 950px;
+        right: 50px;
+        z-index: 1;
+        background-color: #fa2828;
+    }
   }
