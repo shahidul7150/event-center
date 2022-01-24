@@ -1,6 +1,10 @@
 
 
 /* common  */
+body{
+    margin: 0;
+    padding: 0;
+}
 .price-section{
     position: relative;
 }
