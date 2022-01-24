@@ -93,7 +93,22 @@
     <!-- main section  -->
     <main>
         <!-- Bonus section add  -->
-        <section class="container my-3">
+        <section class="container my-3 position-relative">
+            <div class="position-absolute">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <i class="far fa-laugh-beam"></i>
+                      <strong class="me-auto">You notification</strong>
+                      <small>9 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Hello, Shahidul! This is important message.
+                    </div>
+                  </div>
+
+            </div>
+            
             <h1 class="fs-2 text-center fw-bold">It's simple. You have an event to plan and <br> we have <span class="text-warning">the solutions</span></h1>
             <p class="text-center fs-6 text-secondary"><small >HERE US HOW WE CAN HELP YOU </small></p>
             <div>
@@ -144,6 +159,8 @@
                 <hr class="hr-design">
             </div>
         </section>
+        <!-- toast  -->
+        
         <!-- price section  -->
         <section class="container price-section mb-5">
             <h1 class="text-center mt-5 mb-3">Our Package</h1>
@@ -303,12 +320,15 @@
             </div>
 
         </section>
+        
 
-
+        
+        
     </main>
 
     <!-- footer section  -->
     <footer class="bg-dark h-100px text-white mt-5 py-5 ">
+        
         <section class="container">
             <div class="d-flex justify-content-between align-items-center reponse">
                 <div>
@@ -323,7 +343,17 @@
             </div>
         </section>
     </footer>
+
+
+    
     <!-- Bootstrap script link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        window.onload=(event)=>{
+            let myAlert =document.querySelector('.toast');
+            let bsAlert = new bootstrap.Toast(myAlert)
+            bsAlert.show();
+        }
+    </script>
 </body>
 </html>
